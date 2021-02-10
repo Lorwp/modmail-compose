@@ -1,0 +1,6 @@
+[submodule "modmail"]
+	path = modmail
+	url = https://github.com/kyb3r/modmail
+[submodule "logviewer"]
+	path = logviewer
+	url = https://github.com/kyb3r/logviewer/
