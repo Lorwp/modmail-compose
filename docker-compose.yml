@@ -4,7 +4,8 @@ services:
   mongodb:
     image: mongo:4.4-bionic
     restart: always
-    env_file: ".env"
+    env_file:
+      - .env
     restart: always
     volumes:
       - /srv/modmail-db:/data/db
@@ -12,13 +13,15 @@ services:
     image: modmail:latest
     build:
       context: ./modmail
-    env_file: ".env"
+    env_file:
+      - .env
     restart: always
   logviewer:
     image: logviewer:latest
     build:
       context: ./logviewer
-    env_file: ".env"
+    env_file:
+      .env
     restart: always
     ports:
       - 8000:8000
