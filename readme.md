@@ -6,7 +6,7 @@ A stack version of [kyb3r/modmail](https://github.com/kyb3r/modmail/) with depen
 
 First, make a bot for the application per the instructions on the [Main Modmail Repo](https://github.com/kyb3r/modmail/wiki/Installation)
 
-Then clone locally and create `.env` with the following contents:
+Then clone locally, run `git submodule update --init --recursive` and create `.env` with the following contents:
 
 ```bash
 MONGO_INITDB_ROOT_USERNAME=root
