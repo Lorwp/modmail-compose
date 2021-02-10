@@ -21,7 +21,7 @@ services:
     build:
       context: ./logviewer
     env_file:
-      .env
+      - .env
     restart: always
     ports:
       - 8000:8000
